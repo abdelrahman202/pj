@@ -136,13 +136,13 @@
       }
 
       .label-en {
-        text-align: left;
+        text-align: right;
         font-family: 'Roboto', sans-serif;
         flex: 1;
       }
 
       .label-ar {
-        text-align: right;
+        text-align: left;
         font-family: 'Cairo', sans-serif;
         direction: ltr;
         flex: 1;
@@ -413,18 +413,18 @@
         <form id="recruitmentForm">
           <div class="form-group">
             <label for="fullName">
-              <span class="label-ar">الإسم كامل</span>
-              <span class="required">*</span>
               <span class="label-en">Full Name</span>
+              <span class="required">*</span>
+              <span class="label-ar">الإسم كامل</span>
             </label>
             <input type="text" id="fullName" name="fullName" required />
           </div>
 
           <div class="form-group">
             <label for="phoneNumber">
-              <span class="label-ar">رقم الهاتف</span>
-              <span class="required">*</span>
               <span class="label-en">Phone Number</span>
+              <span class="required">*</span>
+              <span class="label-ar">رقم الهاتف</span>
             </label>
             <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="01xxxxxxxxx" maxlength="11" pattern="01[0-9]{9}" required />
             <span class="error-message" id="phoneError" style="display: none;"></span>
@@ -432,18 +432,18 @@
 
           <div class="form-group">
             <label for="birthDate">
-              <span class="label-ar">تاريخ الميلاد</span>
-              <span class="required">*</span>
               <span class="label-en">Date of Birth</span>
+              <span class="required">*</span>
+              <span class="label-ar">تاريخ الميلاد</span>
             </label>
             <input type="date" id="birthDate" name="birthDate" required />
           </div>
 
           <div class="form-group">
             <label for="governorate">
-              <span class="label-ar">المحافظة</span>
-              <span class="required">*</span>
               <span class="label-en">Governorate</span>
+              <span class="required">*</span>
+              <span class="label-ar">المحافظة</span>
             </label>
             <select id="governorate" name="governorate" required>
               <option value="">Select</option>
@@ -454,9 +454,9 @@
 
           <div class="form-group">
             <label for="city">
-              <span class="label-ar">المدينة</span>
-              <span class="required">*</span>
               <span class="label-en">City</span>
+              <span class="required">*</span>
+              <span class="label-ar">المدينة</span>
             </label>
             <select id="city" name="city" required disabled>
               <option value="">Select governorate first</option>
@@ -465,9 +465,9 @@
 
           <div class="form-group">
             <label for="gender">
-              <span class="label-ar">النوع</span>
-              <span class="required">*</span>
               <span class="label-en">Gender</span>
+              <span class="required">*</span>
+              <span class="label-ar">النوع</span>
             </label>
             <select id="gender" name="gender" required>
               <option value="">Select</option>
@@ -478,9 +478,9 @@
 
           <div class="form-group">
             <label for="educationLevel">
-              <span class="label-ar">المؤهل الدراسي</span>
-              <span class="required">*</span>
               <span class="label-en">Education Level</span>
+              <span class="required">*</span>
+              <span class="label-ar">المؤهل الدراسي</span>
             </label>
             <select id="educationLevel" name="educationLevel" required>
               <option value="">Select</option>
@@ -494,18 +494,18 @@
 
           <div class="form-group">
             <label for="experienceYears">
-              <span class="label-ar">عدد سنوات الخبرة في التيلي سيلز</span>
-              <span class="required">*</span>
               <span class="label-en">Years of Experience in Telesales</span>
+              <span class="required">*</span>
+              <span class="label-ar">عدد سنوات الخبرة في التيلي سيلز</span>
             </label>
             <input type="number" id="experienceYears" name="experienceYears" min="0" step="1" required />
           </div>
 
           <div class="form-group">
             <label for="availableImmediately">
-              <span class="label-ar">هل أنت جاهز للعمل في الحال؟</span>
-              <span class="required">*</span>
               <span class="label-en">Available to Start Immediately?</span>
+              <span class="required">*</span>
+              <span class="label-ar">هل أنت جاهز للعمل في الحال؟</span>
             </label>
             <select id="availableImmediately" name="availableImmediately" required>
               <option value="">Select</option>
@@ -516,9 +516,9 @@
 
           <div class="form-group">
             <label for="hasRecommendation">
-              <span class="label-ar">هل لديك شخص مناسب ويمكنك ترشيحه؟</span>
-              <span class="required">*</span>
               <span class="label-en">Can You Recommend Someone?</span>
+              <span class="required">*</span>
+              <span class="label-ar">هل لديك شخص مناسب ويمكنك ترشيحه؟</span>
             </label>
             <select id="hasRecommendation" name="hasRecommendation" required>
               <option value="">Select</option>
@@ -529,16 +529,16 @@
 
           <div class="form-group hidden" id="recommendedNameGroup">
             <label for="recommendedName">
-              <span class="label-ar">اسم المرشَّح</span>
               <span class="label-en">Recommended Person Name</span>
+              <span class="label-ar">اسم المرشَّح</span>
             </label>
             <input type="text" id="recommendedName" name="recommendedName" />
           </div>
 
           <div class="form-group hidden" id="recommendedPhoneGroup">
             <label for="recommendedPhone">
-              <span class="label-ar">رقم هاتف المرشَّح</span>
               <span class="label-en">Recommended Person Phone</span>
+              <span class="label-ar">رقم هاتف المرشَّح</span>
             </label>
             <input type="tel" id="recommendedPhone" name="recommendedPhone" placeholder="01xxxxxxxxx" maxlength="11" pattern="01[0-9]{9}" />
             <span class="error-message" id="recommendedPhoneError" style="display: none;"></span>
